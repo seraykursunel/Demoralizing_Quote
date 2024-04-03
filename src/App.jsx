@@ -97,12 +97,12 @@ export default function App() {
   
 
   return (
-    <div className='wrapper' style={currentData.image.wrapperStyles}>
+    <div className='wrapper' style={currentData?.image.wrapperStyles}>
       {currentData && (
-        <div className='quote-container' style={currentData.image.containerStyles}>
-          <p className='quote' style={getSmallestFontSize(currentData.image.quoteFontSize, currentData.text.quoteFontSize)}>
+        <div className='quote-container' style={currentData?.image.containerStyles}>
+          <p className='quote' style={getSmallestFontSize(currentData?.image.quoteFontSize, currentData.text.quoteFontSize)}>
             {currentData.text.fakeQuote}
-            <span className='source'>-{currentData.text.fakeSource}</span>
+            <span className='source'>-{currentData?.text.fakeSource}</span>
           </p>
         </div>
       )}
